@@ -1,0 +1,669 @@
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+a
+{
+	text-decoration: none;
+}
+
+
+li
+{
+	list-style-type: none;
+}
+
+.internal-textarea
+{
+	background: #eee;
+	color: black;
+	width: 100%;
+	padding: 10px;
+}
+
+
+
+/*********************************Code For Header*************************/
+
+
+.main-header
+{
+	border: 0px solid red;
+	width: 100%;
+	height: auto;
+	position: fixed;
+	top: 0;
+	z-index: 2;
+}
+
+
+.header
+{
+	border: 0px solid red;
+	width: 100%;
+	height: 110px;
+	display: flex;
+	justify-content: space-around;
+	padding: 10px;
+	background: white;
+	
+}
+.header .content
+{
+	border: 0px solid;
+	width: 200px;
+	#height: 105%;
+	font-size: 20px;
+	font-style: italic;
+	font-weight: bold;
+	padding: 5px 10px;
+}
+
+.header .social img
+{
+	margin: 0 10px;
+}
+
+
+.navigation
+{
+	border: 0px solid;
+	width: 100%;
+	height: 50px;
+	background: black;
+	
+}
+
+.navigation .content
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.navigation .content ul
+{
+	display: inline-flex;
+	padding: 15px 20px;
+	margin: 0 70px;
+	list-style-type: none;
+}
+.navigation .content ul li
+{
+	padding: 0 20px;
+}
+.navigation .content ul li a
+{
+	color: white;
+	text-transform: uppercase;
+	font-size: 15px;
+}
+
+.navigation .content ul li a:hover
+{
+	color: orangered;
+}
+
+
+.navigation .content img
+{
+	position: fixed;
+	right: 25%;
+}
+
+.login
+{
+	border: 0px solid;
+	width: 500px;
+	height: 370px;
+	position: fixed;
+	top: -120%;
+	left: 30%;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+	transition: 0.5s ease;
+	z-index: 2;
+}
+
+.login img
+{
+	cursor: pointer;
+}
+
+.login .content
+{
+	border: 0px solid red;
+	width: 100%;
+	height: 100%;
+	padding: 20px;
+}
+.login .content input[type="text"], input[type="password"]
+{
+	width: 100%;
+	margin-top: 30px;
+	outline: none;
+	padding: 10px;
+	font-size: 15px;
+	border-radius: 5px;
+	border: none;
+	background: #eee;
+}
+
+.login .content input[type="submit"]
+{
+	margin-top: 30px;
+	border: none;
+	width: 100%;
+	height: 30px;
+	cursor: pointer;
+	color: white;
+	background: orangered;
+	border-radius: 5px;
+}
+
+.login.active
+{
+	border: 0px solid;
+	width: 500px;
+	height: 370px;
+	position: fixed;
+	top: 10px;
+	left: 30%;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: white;
+	box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.4);
+	transition: 0.5s ease;
+}
+
+
+/*********************************Code For Header*************************/
+
+
+.image-slider
+{
+	border: 0px solid red;
+	width: 100%;
+	height: 40vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	top: 20vh;
+}
+
+.image-slider button
+{
+	padding: 10px;
+	width: 80px;
+	border-radius: 5px;
+	color: white;
+	background: black;
+	font-family: sans-serif;
+	border: none;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1;
+	top: 150px;
+}
+
+.image-slider button:hover
+{
+	color: red;
+}
+
+.image-slider .previous
+{
+	left: 20px;
+}
+
+.image-slider .next
+{
+	right: 20px;
+}
+
+.image-slider .frame
+{
+	border: 0px solid green;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.image-slider .frame .slider
+{
+	display: flex;
+	transition: all 1s ease;
+}
+
+.image-slider .frame .slider img
+{
+	width: 50%;
+	height: all;
+	object-fit: cover;
+	background-size: cover;
+	background-position: center;
+}
+
+
+.container
+{
+	border: 0px solid red;
+	width: 100%;
+	height: auto;
+	position: absolute;
+	top: 60%;
+	overflow: hidden;
+}
+
+.container .content
+{
+	border: 0px solid;
+	width: 100%;
+	height: 100px;
+	display: flex;
+	align-items: center;
+}
+
+.container .content h1
+{
+	padding: 50px;
+}
+
+.container .content h2
+{
+	padding: 30px;
+	color: orangered;
+	text-align: right;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.container .contents
+{
+	border: 0px solid;
+	width: 100%;
+	height: 100%;
+	padding: 50px;
+}
+
+.container .contents .box
+{
+	border: 0px solid green;
+	width: 100px;
+	height: 115px;
+	float: left;
+	margin: 0 10px;
+	text-align: center;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
+}
+
+.container .contents .box img
+{
+	width: 50%;
+	padding: 5px 0;
+}
+
+.container .contents .box p
+{
+	padding: 5px 0;
+	color: orangered;
+}
+
+.container .contents .share
+{
+	border: 0px solid orange;
+	width: 250px;
+	height: 50px;
+	position: absolute;
+	right: 50px;
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+.container .contents .share img
+{
+	width: 10%;
+}
+
+.container .contents .book
+{
+	border: 0px solid orange;
+	width: 250px;
+	height: 340px;
+	position: absolute;
+	right: 50px;
+	padding: 10px;
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	margin-top: 70px;
+}
+
+.container .contents .book form header
+{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+
+.container .contents .book form input,textarea
+{
+	margin: 10px 0;
+	padding: 7px;
+	border-radius: 5px;
+	background: #eee;
+	outline: none;
+	border: none;
+	width: 100%;
+	font-size: 15px;
+	box-shadow: 1px 1px 3px -0.5px rgba(0, 0, 0, 0.3);
+}
+
+.container .contents .book form textarea
+{
+	height: 100px;
+}
+
+.container .contents .book form input[type="submit"]
+{
+	width: 150px;
+	text-transform: uppercase;
+	padding: 10px;
+	font-size: 12px;
+	cursor: pointer;
+	background-color: orangered;
+	color: white;
+}
+
+.container .contents .car-feedback
+{
+	border: 0px solid orange;
+	width: 350px;
+	height: 490px;
+	margin-top: 150px;
+	padding: 10px;
+	text-align: center;
+	box-shadow: 1px 1px 3px 0px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+.container .contents .car-feedback form input,textarea
+{
+	width: 100%;
+	margin: 8px 0;
+	padding: 10px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 1px 1px 2px 0px rgba(0, 0, 0, 0.5);
+	background: #eee;
+}
+
+.container .contents .car-feedback form textarea
+{
+	height: 100px;
+}
+
+.container .contents .car-feedback form input[type="submit"]
+{
+	color: white;
+	background-color: orangered;
+	cursor: pointer;
+}
+
+.container .contents .similar-cars
+{
+	border: 0px solid green;
+	width: 600px;
+	height: fit-content;
+	position: absolute;
+	top: 7%;
+	left: 32%;
+	text-align: center;
+	padding: 5px 0;
+	border-radius: 5px;
+}
+
+.container .contents .similar-cars .content
+{
+	border: 0px solid;
+	width: 100%;
+	height: 150px;
+	margin: 15px 0;
+	border-radius: 5px;
+	box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.6);
+	overflow: hidden;
+	transition: 1s;
+}
+
+.container .contents .similar-cars .content img:hover
+{
+	transform: scale(1.2);
+	transition: 1s;
+}
+
+.container .contents .similar-cars .content .description
+{
+	border: 0px solid green;
+	width: 100%;
+	height: 100%;
+	padding: 10px 0;
+}
+
+.container .contents .similar-cars .content .description .icon
+{
+	border: 0px solid green;
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	padding: 0 15px;
+	margin-top: 10px;
+}
+
+.container .contents .similar-cars .content .description .price
+{
+	border: 0px solid green;
+	margin-top: 20px;
+}
+
+/*********************************Code For Footer*************************/
+
+.footer
+{
+	border: 0px solid red;
+	width: 100%;
+	height: 700px;
+	display: flex;
+	background: url("..//images/highway.png") no-repeat rgba(0, 0, 0, 0.5);
+	background-position: center;
+	background-size: cover;
+	background-blend-mode: darken;
+}
+
+.footer .content
+{
+	border: 0px solid red;
+	width: 100%;
+	height: 100%;
+	display: block;
+	
+}
+
+.footer .content .experience
+{
+	border: 0px solid;
+	width: 95%;
+	height: 150px;
+	margin-top: 40px;
+	margin-left: 2%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.footer .content .experience .box
+{
+	border: 0px solid green;
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	background: orangered;
+	color: white;
+}
+
+.footer .content .experience .box span
+{
+	position: relative;
+	left: 33%;
+	top: 20px;
+}
+
+.footer .content .experience .box span h3
+{
+	font-size: 25px;
+}
+
+.footer .content .experience .box span p
+{
+	font-size: 12px;
+	position: relative;
+	right: 20px;
+	top: -10px;
+}
+
+.footer .content .contact
+{
+	border: 0px solid rebeccapurple;
+	width: 100%;
+	height: 400px;
+	margin-top: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	box-shadow: 2px 1px 3px 1px rgba(255, 255, 255, 0.4);
+	margin-top: 100px;
+}
+
+
+.footer .content .contact .box
+{
+	border: 0px solid green;
+	width: 300px;
+	height: 300px;
+	color: white;
+	text-align: center;
+	box-shadow: 1px 1px 2px 1px rgba(255, 255, 255, 0.3);
+}
+
+.footer .content .contact .box img
+{
+	position: relative;
+	top: 35px;
+	left: -30%;
+}
+
+.footer .content .contact .box ul li
+{
+	transition: transform 1s;
+}
+
+.footer .content .contact .box ul li a
+{
+	color: white;
+}
+
+.footer .content .contact .box ul li:hover
+{
+	transition: transform 1s;
+	cursor: pointer;
+	transform: scale(1.1);
+}
+
+.footer .content .contact .map-image
+{
+	transition: transform 1s;
+}
+
+.footer .content .contact .map-image:hover
+{
+	transform: scale(1.1);
+}
+
+.footer .content .contact .feedback input,textarea
+{
+	margin: 10px 0;
+	width: 200px;
+	outline: none;
+	padding: 5px;
+	font-size: 15px;
+	background: transparent;
+	color: white;
+	border: none;
+	box-shadow: 1px 1px 2px 0.5px rgba(255, 255, 255, 0.4);
+}
+.footer .content .contact .feedback input[type="text"]::placeholder
+{
+	color: white;
+}
+
+.footer .content .contact .feedback textarea::placeholder
+{
+	color: white;
+}
+
+.footer .content .contact .feedback input[type="submit"]
+{
+	cursor: pointer;
+	background: orangered;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+.footer .content .contact .newsletter input
+{
+	margin: 10px 0;
+	width: 200px;
+	outline: none;
+	padding: 5px;
+	font-size: 15px;
+	background: transparent;
+	color: white;
+	border: none;
+	box-shadow: 1px 1px 2px 0.5px rgba(255, 255, 255, 0.4);
+}
+.footer .content .contact .newsletter input[type="text"]::placeholder
+{
+	color: white;
+}
+
+.footer .content .contact .newsletter input[type="submit"]
+{
+	cursor: pointer;
+	background: lawngreen;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+}
+
+.footer .content .contact .newsletter img
+{
+	margin: 0 10px;
+}
+
+/*********************************Code For Footer*************************/
